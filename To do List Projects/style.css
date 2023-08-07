@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --background-Color:#007BFF;
+    --App-color:#ffffff;
+}
+.Green-theme
+{
+    --background-Color:green;
+    --App-color:#ffffff;   
+}
+
+body
+{
+ height: 100vh;
+ background: var(--background-Color);
+}
+.app
+{
+
+  
+    font-family: 'popphins',sans-serif;
+    width: 600px;
+    margin: 80px auto 0px;
+    
+}
+.container
+{
+    padding: 2em 2.5em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 1em 2em rgba(0, 0 , 0, 0.3);
+    background:var(--App-color); 
+
+}
+.wrapper
+{
+
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 1em;
+
+}
+#task
+{
+ width: 100%;
+ background-color: transparent;
+ border: none;
+ border-bottom:2px solid black;
+ font-size: 18px;
+ padding-bottom: 5px;
+ 
+}
+#task:focus
+{
+    outline: none;
+    border-color: var(--background-Color);
+}
+.add-task
+{
+ background-color:var(--background-Color);
+ color:var(--App-color);
+ border-radius: 6px;
+ border: none;
+ outline:none;
+ width: 80%;
+ font-size: 20px;
+ height: 40px;
+ cursor: pointer;    
+}
+.add-task:hover
+{
+ background-color: black;
+ color:var(--App-color);
+}
+#error
+{
+    text-align: center;
+    background-color:var(--App-color);
+    color: #ff5c5c;
+    margin-top: 10px;
+    padding: 1em 0;
+    border-radius: 6px;
+    font-weight: 700;
+    display: none;
+}
+.tasks
+{
+    margin-top: 1em ;
+    border-radius: 0.5em;
+    width: 100%;
+    position: relative;
+    padding: 1em 0.5em;
+}
+.New-task
+{
+    background-color:var(--App-color);
+    padding: 0.8em 1em;
+    display: grid;
+    grid-template-columns: 1fr 8fr 2fr 2fr;
+    gap: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0 , 0, 0.05);
+    align-items: center;
+    cursor: pointer;
+
+}
+.New-task:not(:first-child)
+{
+    margin-top: 1em;
+}
+.New-task input[type="checkbox"]
+/*.task-check*/
+{
+position: relative;
+height: 20px;
+width: 20px;
+border-radius: 50%;
+border: 2px solid #e1e1e1;    
+}
+.New-task button
+{
+    color: #ffffff;
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.Edit-button
+{
+    background-color: var(--background-Color);
+}
+.Edit-button:disabled
+{
+    cursor: no-drop;
+}
+.Delete-button
+{
+    background-color: #ff5c5c;
+}
+#pending-tasks span
+{
+    color: var(--background-Color);
+}
+.completed
+{
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+.Settings
+{
+    margin-left: 500px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}

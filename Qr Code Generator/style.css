@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'popphins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #262a2f;
+
+}
+.app
+{
+    background: #fff;
+    width: 400px;
+    border-radius: 10px;
+    margin: 100px auto 0px;
+    padding: 25px 35px;
+}
+.app p
+{
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.app input
+{
+   height: 50px;
+   width: 100%;
+   border-radius: 5px;
+   border: 1px solid #494eea;
+   outline:0;
+   padding: 5px 10px;
+   font-size: 15px;
+}
+.app button
+{
+  width: 100%;
+  height: 40px;
+  background: #494eea;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  margin: 20px 0;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+
+}
+.app img{
+
+width: 200px;
+overflow: hidden;
+border-radius: 5px;
+max-height: 0;
+transition: max-height 1s;
+}
+.image-box{
+  width:  100%;
+  padding: 10px;
+}
+.show-image
+{
+    max-height: 300px;
+    border: 1px solid #d1d1d1;
+    margin: 10px auto;
+}
