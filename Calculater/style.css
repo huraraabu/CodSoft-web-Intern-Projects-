@@ -1,0 +1,84 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popphins',sans-serif;
+}
+:root
+{
+    --operator-Color:#007BFF;
+    --background-color:#ffffff;
+}
+body
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background: #e0e3eb;
+
+}
+.container
+{ 
+ position: relative;
+ background: var(--background-color);
+ max-width:300px;
+ border: none;
+ border-radius: 12px;
+ padding: 10px 20px 20px;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.buttons
+{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap: 10px;
+    
+}
+.display
+{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 25px; 
+    border: none;
+    outline: none;
+    text-align: right;
+    color: #00031a;
+    
+}
+.buttons button
+{
+    border-radius:6px ;
+    padding: 10px;
+    font-size: 20px;
+    background: #eee;
+    cursor: pointer;
+    border: none;
+}
+.buutons button:active
+{
+
+    transform: scale(0.99);
+
+}
+.operator
+{
+    color: var(--operator-Color);
+}
+.Settings
+{
+    margin-left: 250px;
+    font-size: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.Dark-theme
+{
+    --operator-Color:#007BFF;
+    --background-color:orange;
+
+}
